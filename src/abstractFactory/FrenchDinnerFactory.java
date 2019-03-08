@@ -4,11 +4,11 @@ public class FrenchDinnerFactory implements AbstractDinnerFactory {
 
     @Override
     public FirstDish getFirstDish() {
-        return null;
+        return new FrenchDinnerFirstDish();
     }
 
     @Override
     public SecondDish getSecondDish() {
-        return null;
+        return new FrenchDinnerSecondDish();
     }
 }

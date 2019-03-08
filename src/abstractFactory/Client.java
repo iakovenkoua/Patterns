@@ -2,12 +2,14 @@ package abstractFactory;
 
 public class Client {
 
-    public AbstractDinnerFactory getAbstractDinnerFactory() {
-        return null;
-    }
+    public static void main(String[] args) {
+        final AbstractDinnerFactory factory = new FrenchDinnerFactory();
 
-    public void setAbstractDinnerFactory (AbstractDinnerFactory val){
+        final FirstDish firstDish = factory.getFirstDish();
+        firstDish.taste();
 
+        final SecondDish secondDish = factory.getSecondDish();
+        secondDish.taste();
     }
 
 }
