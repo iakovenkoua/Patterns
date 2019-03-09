@@ -9,7 +9,7 @@ public class StrategyDemoPattern {
         ArrayList <Integer> arrayList = new ArrayList();
 
         //TODO вынести в отдельный метод "context.executeStrategy(arrayList))"
-        
+
         Context context = new Context(new QuickSort());
         System.out.println("QuickSort " + context.executeStrategy(arrayList));
 
