@@ -2,7 +2,7 @@ package decorator;
 
 public class CheezeDecoration extends BaseDecoration{
     public CheezeDecoration(CurrentPizza pizza) {
-        this.createPizza = pizza;
+       // this.createPizza = pizza;
     }
 
 
